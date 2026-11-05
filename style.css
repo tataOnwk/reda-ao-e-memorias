@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f3ed;
+  color: #51483f;
+  min-height: 100vh;
+}
+
+header {
+  background: #e9dfd2;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #57483b;
+}
+
+header p {
+  color: #786b60;
+}
+
+main {
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.resumo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.resumo div {
+  background: #fff;
+  padding: 20px 35px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 140px;
+  box-shadow: 0 3px 12px #0000000a;
+}
+
+.resumo span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #94785f;
+}
+
+.resumo p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.controles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.controles input,
+.controles select {
+  padding: 13px;
+  border: 1px solid #d8cbbd;
+  border-radius: 8px;
+  background: white;
+  color: #51483f;
+  font-size: 14px;
+}
+
+.controles input {
+  flex: 1;
+}
+
+.controles select {
+  cursor: pointer;
+}
+
+.lista-redacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000a;
+  border: 1px solid #eee6dd;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card p {
+  color: #8b7866;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card button {
+  background: #92775e;
+  color: white;
+  border: none;
+  padding: 10px 17px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #705943;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #00000080;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal.ativo {
+  display: flex;
+}
+
+.modal-conteudo {
+  background: #fff;
+  width: 100%;
+  max-width: 750px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.modal-conteudo h2 {
+  font-family: Georgia, serif;
+  margin: 15px 35px 15px 0;
+}
+
+.fechar {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  border: none;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #705943;
+}
+
+.modal-nota {
+  color: #94785f;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-texto {
+  white-space: pre-line;
+  line-height: 1.8;
+  color: #51483f;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8b7866;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 29px;
+  }
+
+  .resumo {
+    gap: 10px;
+  }
+
+  .resumo div {
+    min-width: 0;
+    flex: 1;
+    padding: 17px 10px;
+  }
+
+  .controles {
+    flex-direction: column;
+  }
+
+  .modal-conteudo {
+    padding: 22px;
+  }
+}

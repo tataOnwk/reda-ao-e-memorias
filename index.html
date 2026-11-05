@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Redações</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Minhas Redações</h1>
+    <p>Meu espaço de estudos e evolução</p>
+  </header>
+
+  <main>
+    <section class="resumo">
+      <div>
+        <span id="total">0</span>
+        <p>Redações</p>
+      </div>
+      <div>
+        <span id="media">0</span>
+        <p>Média das notas</p>
+      </div>
+    </section>
+
+    <section class="controles">
+      <input
+        type="text"
+        id="pesquisa"
+        placeholder="Pesquisar redação..."
+      >
+
+      <select id="filtro">
+        <option value="todas">Todas as redações</option>
+        <option value="com-nota">Com nota</option>
+        <option value="sem-nota">Sem nota</option>
+      </select>
+    </section>
+
+    <section id="lista-redacoes" class="lista-redacoes"></section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-conteudo">
+      <button id="fechar" class="fechar">×</button>
+      <h2 id="modal-titulo"></h2>
+      <p id="modal-nota" class="modal-nota"></p>
+      <div id="modal-texto" class="modal-texto"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Minhas Redações • Meu progresso, minhas conquistas.</p>
+  </footer>
+
+  <script src="redacoes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
