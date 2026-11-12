@@ -1,62 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minhas Redações</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha trajetória escolar | Thaina Nowak Kania</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Minhas Redações</h1>
-    <p>Meu espaço de estudos e evolução</p>
-  </header>
+    <header class="topo">
+        <span>MINHA TRAJETÓRIA</span>
+        <span>3º E • 2026</span>
+    </header>
 
-  <main>
-    <section class="resumo">
-      <div>
-        <span id="total">0</span>
-        <p>Redações</p>
-      </div>
-      <div>
-        <span id="media">0</span>
-        <p>Média das notas</p>
-      </div>
-    </section>
+    <main class="apresentacao">
 
-    <section class="controles">
-      <input
-        type="text"
-        id="pesquisa"
-        placeholder="Pesquisar redação..."
-      >
+        <!-- SLIDE 1: CAPA -->
+        <section class="slide ativo capa">
+            <div class="capa-conteudo">
+                <p class="subtitulo">MINHA HISTÓRIA ESCOLAR</p>
+                <h1>Uma trajetória de<br>aprendizados e conquistas</h1>
+                <div class="linha"></div>
+                <h2>Thaina Nowak Kania</h2>
+                <p>3º ano do Ensino Médio • 3º E</p>
+                <p class="escola">Colégio Estadual Padre Cláudio Morelli</p>
+            </div>
 
-      <select id="filtro">
-        <option value="todas">Todas as redações</option>
-        <option value="com-nota">Com nota</option>
-        <option value="sem-nota">Sem nota</option>
-      </select>
-    </section>
+            <div class="foto-capa">
+                <img src="assets/foto-capa.jpg" alt="Foto da estudante">
+            </div>
+        </section>
 
-    <section id="lista-redacoes" class="lista-redacoes"></section>
-  </main>
+        <!-- SLIDE 2: TRAJETÓRIA -->
+        <section class="slide trajetoria">
+            <div class="conteudo">
+                <p class="subtitulo">MINHA CAMINHADA</p>
+                <h1>Minha trajetória escolar</h1>
 
-  <div id="modal" class="modal">
-    <div class="modal-conteudo">
-      <button id="fechar" class="fechar">×</button>
-      <h2 id="modal-titulo"></h2>
-      <p id="modal-nota" class="modal-nota"></p>
-      <div id="modal-texto" class="modal-texto"></div>
+                <div class="texto-trajetoria">
+                    <p>Minha história no Colégio Estadual Padre Cláudio Morelli começou no 1º ano do Ensino Médio. Foi nessa escola que passei por diferentes fases da minha vida, acumulando aprendizados e experiências que contribuíram para meu crescimento.</p>
+
+                    <p>Ao longo dos anos, tive a oportunidade de conhecer professores que marcaram minha trajetória e que guardo com carinho. Durante o Ensino Médio, uma das minhas maiores conquistas foi perceber minha evolução na hora de apresentar trabalhos. A cada apresentação, fui ganhando mais confiança e melhorando um pouco mais.</p>
+
+                    <p>Hoje, chegando ao 3º ano do Ensino Médio, percebo o quanto amadureci e o quanto aprendi durante essa caminhada. Mais do que conteúdos escolares, levo comigo experiências, desafios superados e a certeza de que cada etapa contribuiu para a pessoa que estou me tornando.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: GALERIA -->
+        <section class="slide galeria">
+            <div class="conteudo">
+                <p class="subtitulo">MOMENTOS ESPECIAIS</p>
+                <h1>Minha galeria</h1>
+                <p class="descricao">Registros de momentos, atividades e experiências vividas durante essa caminhada.</p>
+
+                <div class="grade-fotos">
+                    <figure>
+                        <img src="assets/robotica.jpg" alt="Atividade de robótica">
+                        <figcaption>Robótica</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/trabalho-sociologia.jpg" alt="Trabalho de sociologia">
+                        <figcaption>Trabalho de sociologia</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/turma.jpg" alt="Foto da turma">
+                        <figcaption>Minha turma</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/convite-padrinho.jpg" alt="Convite de padrinho">
+                        <figcaption>Momentos especiais</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/professor-buiu.jpg" alt="Professor Buiu">
+                        <figcaption>Professor Buiu</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/programacao.jpg" alt="Atividade de programação">
+                        <figcaption>Programação</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/redacao.jpg" alt="Atividade de redação">
+                        <figcaption>Redações</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/lagarto.jpg" alt="Lagarto em meio à natureza">
+                        <figcaption>Contato com a natureza</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: REDAÇÕES -->
+        <section class="slide redacoes">
+            <div class="conteudo">
+                <p class="subtitulo">PRODUÇÕES ESCOLARES</p>
+                <h1>Minhas redações</h1>
+                <p class="descricao">Uma seleção de textos produzidos ao longo da minha trajetória escolar.</p>
+
+                <div id="listaRedacoes" class="lista-redacoes"></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: ENCERRAMENTO -->
+        <section class="slide encerramento">
+            <div class="encerramento-conteudo">
+                <p class="subtitulo">FIM DE UMA ETAPA, INÍCIO DE OUTRA</p>
+                <h1>Levo comigo cada aprendizado.</h1>
+                <div class="linha"></div>
+                <p>Obrigada por fazer parte dessa trajetória!</p>
+                <h2>Thaina Nowak Kania</h2>
+                <p>3º E • 2026</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NAVEGAÇÃO -->
+    <nav class="navegacao">
+        <button id="anterior" aria-label="Slide anterior">←</button>
+        <span id="indicador">01 / 05</span>
+        <button id="proximo" aria-label="Próximo slide">→</button>
+    </nav>
+
+    <!-- JANELA DAS REDAÇÕES -->
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <button id="fechar" class="fechar" aria-label="Fechar">×</button>
+            <p class="subtitulo">PRODUÇÃO ESCOLAR</p>
+            <h2 id="tituloModal"></h2>
+            <div id="textoModal" class="texto-modal"></div>
+        </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Minhas Redações • Meu progresso, minhas conquistas.</p>
-  </footer>
-
-  <script src="redacoes.js"></script>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
